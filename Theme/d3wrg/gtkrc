@@ -1,0 +1,115 @@
+pixmap_path '/usr/share/themes/dwerg/gtk-2.0/'
+
+style "default"
+{
+  GtkRange::slider_width = 12
+  GtkRange::stepper_size = 12
+  GtkScrollbar::min_slider_length = 17
+  GtkCheckButton::indicator_size = 10
+
+  font = "Bitstream Vera Sans 8"
+
+  base[NORMAL]      = "#f0f0f0"
+  base[SELECTED]    = "#e0e0e0"
+ 
+  fg[NORMAL]        = "#303030"
+  fg[SELECTED]      = "#909090"
+  fg[INSENSITIVE]   = "#999999"
+  fg[ACTIVE]        = "#000000" 
+
+  bg[NORMAL]        = "#ebebeb"
+  bg[SELECTED]      = "#ebebeb"
+  bg[INSENSITIVE]   = "#ebebeb"
+  bg[ACTIVE]        = "#ebebeb"
+
+  text[NORMAL]      = "#808080"
+  text[SELECTED]    = "#303030"
+  text[INSENSITIVE] = "#e0e0e0"
+  text[ACTIVE]      = "#000000"
+  
+  engine "dwerg"    
+  {
+  }
+}
+
+widget_class "*" style "default"
+
+style "entries" = "default"
+{ 
+  bg[NORMAL]        = "#efefef"
+  
+  fg[NORMAL]        = "#808080"
+
+  text[SELECTED]    = "#303030"
+}
+
+widget_class "*Entry*" style "entries"
+widget_class "*List*"  style "entries"
+widget_class "*Tree*"  style "entries"
+
+style "progress" = "default"
+{
+  bg[NORMAL]        = "#efefef"
+  bg[SELECTED]      = "#c9c9c9"
+  fg[NORMAL]        = "#808080"
+  fg[SELECTED]      = "#808080"
+}
+
+widget_class "*Progress*" style "progress"
+
+style "notebook" = "default"
+{
+  bg[NORMAL]        = "#f0f0f0"
+  bg[ACTIVE]        = "#e9e9e9"
+}
+widget_class "*Notebook*" style "notebook"
+
+style "scale" = "default"
+{
+  bg[ACTIVE]        = "#ebebeb"
+  bg[PRELIGHT]      = "#000000"
+}
+widget_class "*Scale*" style "scale"
+
+style "scrollbar" = "default"
+{
+  bg[NORMAL]        = "#c9c9c9"
+  bg[PRELIGHT]      = "#ededed"
+  bg[ACTIVE]        = "#c9c9c9"
+}
+widget_class "*Scrollbar*" style "scrollbar"
+widget_class "*Scale*" style "scrollbar"
+
+style "menu" = "default"
+{ 
+  bg[PRELIGHT]      = "#ededed"
+  fg[PRELIGHT]      = "#808080"
+  bg[SELECTED]      = "#ededed"
+  fg[SELECTED]      = "#808080"
+}
+
+widget_class "*Menu*" style "menu"
+
+style "toolbar" = "default"
+{ 
+  bg[NORMAL]        = "#ededed"
+}
+
+widget_class "*Toolbar*" style "toolbar"
+
+style "button" = "default"
+{ 
+  bg[PRELIGHT]      = "#ffffff"
+  bg[ACTIVE]        = "#bbbbbb"
+}
+
+widget_class "*Button*" style "button"
+
+style "dwerg-tooltips" = "default"
+{
+  xthickness = 1
+  ythickness = 1
+  bg[NORMAL] = "#ffffff"
+}
+widget "gtk-tooltips" style "dwerg-tooltips"
+

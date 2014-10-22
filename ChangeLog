@@ -1,0 +1,29 @@
+6 jan 2005 Manfred Stienstra
+* Complete rewrite, cleaner code
+* Changed checkbox and radio button
+* Fixed badly visible text (again)
+* Fixed tooltip bug
+
+14 apr 2004 Manfred Stienstra
+* Optimizations (threw away some strange clipping code left over from the initial source tree)
+* Fixed the white text after focus change bug
+
+7 apr 2003 Manfred Stienstra
+* Optimizations (changed some drawing code to make it faster)
+* Fixed an install bug
+
+6 dec 2002 Manfred Stienstra
+* Made the lines of the tabs meet at the right place
+* Created a draw focus, for a better looking focus
+* Some code cleaning
+* Fixed checkbox edge problem and radio button color
+
+1 dec 2002 Manfred Stienstra
+
+* Updated some stuff to get the ToolBar to be a little lighter.
+* Selected items in trees and lists are readable now.
+* Buttons are a bit more like buttons
+
+30 nov 2002 Manfred Stienstra
+
+* First release, programmed in a day. So probably with some bugs.

@@ -1,0 +1,5 @@
+Installation is pretty easy:
+
+./configure
+make install
+
